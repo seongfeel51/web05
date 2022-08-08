@@ -1,0 +1,8 @@
+@charset "UTF-8";
+#index_02{width: 1903px; height: 700px;}
+
+#slide2{height: 700px; overflow: hidden;}
+#slide2>ul{height: 700px;}
+#slide2>ul>li{height: 700px;}
+
+.category{position: relative; background: url(../img/bg_top.jpg) no-repeat top center; min-height: 1000px; width: 100%; top: 0; z-index: 50;}

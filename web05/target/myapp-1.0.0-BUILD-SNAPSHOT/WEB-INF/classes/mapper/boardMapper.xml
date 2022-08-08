@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+	<select id="boardList" resultType="com.starsports.dto.BoardDTO">
+		select * from board order by seq desc, regdate desc
+	</select>
+	<select id="boardPageList" resultType="com.starsports.dto.BoardDTO">
+		select * from board order by seq desc, regdate desc limit #{startPost}, #{bnum}
+	</select>
+	<select id="boardRead" resultType="com.starsports.dto.BoardDTO">
+		select * from board where seq=#{seq}
+	</select>
+	<select id="boardCount" resultType="integer">
+		select count(*) from board
+	</select>
+	<insert id="insertBoard">
+		insert into board(title, content, bgimage, regdate) values (#{title}, #{content}, #{bimage}, now())
+	</insert>
+	<update id="">
+		update board set 
+	</update>
+</mapper>

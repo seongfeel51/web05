@@ -1,0 +1,158 @@
+Found a 18 line (87 tokens) duplication in the following files: 
+Starting at line 24 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\util\PageMaker.java
+Starting at line 43 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\util\PageMaker.java
+
+		this.curBlock = 1;
+		this.curPage = curPage;
+		if(curPage < 1) {
+			this.curPage = 1;
+		}
+		this.setTotPage(count);
+		this.setPageRange();
+		this.setTotBlock();
+		this.setBlockRange();
+		this.setNextBlock();
+		this.setPrevBlock();
+		this.setBnum();
+		this.setStartPost();
+		this.setTotPost(count);
+		this.setEndPost();
+	}
+	
+	public PageMaker(int count, int curPage, int PAGE_PER_POST) {
+=====================================================================
+Found a 18 line (77 tokens) duplication in the following files: 
+Starting at line 24 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\util\PageMaker.java
+Starting at line 43 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\util\PageMaker.java
+Starting at line 63 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\util\PageMaker.java
+
+		this.curBlock = 1;
+		this.curPage = curPage;
+		if(curPage < 1) {
+			this.curPage = 1;
+		}
+		this.setTotPage(count);
+		this.setPageRange();
+		this.setTotBlock();
+		this.setBlockRange();
+		this.setNextBlock();
+		this.setPrevBlock();
+		this.setBnum();
+		this.setStartPost();
+		this.setTotPost(count);
+		this.setEndPost();
+	}
+	
+	public PageMaker(int count, int curPage, int PAGE_PER_POST) {
+=====================================================================
+Found a 9 line (67 tokens) duplication in the following files: 
+Starting at line 8 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\dao\BoardDAO.java
+Starting at line 11 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\service\BoardService.java
+
+public interface BoardDAO {
+	public List<BoardDTO> BoardList() throws Exception;
+	public List<BoardDTO> BoardPageList(PageMaker page) throws Exception;
+	public BoardDTO BoardRead(int seq) throws Exception;
+	public int BoardCount() throws Exception;
+	public void addBoard(BoardDTO board) throws Exception; 
+	public void deleteBoard(BoardDTO board) throws Exception;
+	public void updateBoard(BoardDTO board) throws Exception;
+}
+=====================================================================
+Found a 7 line (48 tokens) duplication in the following files: 
+Starting at line 10 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\dao\MemberDAO.java
+Starting at line 10 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\service\MemberService.java
+
+public interface MemberDAO {
+	public List<MemberDTO> memberList() throws Exception;
+	public void joinMember(MemberDTO mdto) throws Exception;
+	public MemberDTO loginMember(MemberDTO member) throws Exception;
+	public void deleteMember(MemberDTO member) throws Exception;
+	public int idCheck(String id) throws Exception;
+}
+=====================================================================
+Found a 14 line (47 tokens) duplication in the following files: 
+Starting at line 89 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+Starting at line 110 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+
+	public String ajax9(String id, Model model) {
+		//UserDTO dto = service.userIdCheck(id);
+		//dtoê°? null ?´ ?•„?‹ˆë©?, ?‚¬?š©?´ ë¶ˆê??Š¥?•œ ?•„?´?””, null?´ë©? ?‚¬?š©?´ ê°??Š¥?•œ ?•„?´?””
+		String msg = "";
+		if(id.equals("admin")) {
+			msg = "no";
+		} else {
+			msg = "ok";
+		}
+		model.addAttribute("msg", msg);
+		return msg;
+	}
+	
+	@GetMapping(value="ajaxForm10.do")
+=====================================================================
+Found a 12 line (46 tokens) duplication in the following files: 
+Starting at line 72 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+Starting at line 129 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+
+	public String ajax8(UserDTO user, Model model) {
+		//UserDTO dto = service.userIdCheck(id);
+		//dtoê°? null ?´ ?•„?‹ˆë©?, ?‚¬?š©?´ ë¶ˆê??Š¥?•œ ?•„?´?””, null?´ë©? ?‚¬?š©?´ ê°??Š¥?•œ ?•„?´?””
+		String msg = "";
+		if(user.getId().equals("admin")) {
+			msg = "no";
+		} else {
+			msg = "ok";
+		}
+		model.addAttribute("msg", msg);
+		return msg;
+	}
+=====================================================================
+Found a 5 line (31 tokens) duplication in the following files: 
+Starting at line 7 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\dao\GoodsDAO.java
+Starting at line 7 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\service\GoodsService.java
+
+public interface GoodsDAO {
+	public List<GoodsDTO> goodsList() throws Exception;
+	public List<GoodsDTO> football() throws Exception;
+	public void insertGoods(GoodsDTO goods) throws Exception;
+}
+=====================================================================
+Found a 12 line (29 tokens) duplication in the following files: 
+Starting at line 76 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+Starting at line 93 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+Starting at line 112 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+
+		if(user.getId().equals("admin")) {
+			msg = "no";
+		} else {
+			msg = "ok";
+		}
+		model.addAttribute("msg", msg);
+		return msg;
+	}
+	
+	
+	//get ë°©ì‹?˜ idë§? ë°›ì•„ ì²˜ë¦¬?˜?Š” ê²½ìš°?˜ ?•„?´?”” ì¤‘ë³µ ì²´í¬
+	@ResponseBody 
+=====================================================================
+Found a 3 line (28 tokens) duplication in the following files: 
+Starting at line 16 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\bean\JoinMemberBean.java
+Starting at line 20 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\bean\JoinMemberBean.java
+
+	@Size(min=4, max=12, message="ë¹„ë?ë²ˆí˜¸ ê¸¸ì´?Š” 2~12 ?‚¬?´?–´?•¼ ?•©?‹ˆ?‹¤.")
+	@Pattern(regexp="^([A-Za-z])+([0-9])+$", message="ë¹„ë?ë²ˆí˜¸?Š” ???†Œë¬¸ì?? ?ˆ«??˜ ì¡°í•©?´?–´?•¼ ?•©?‹ˆ?‹¤.")
+	private String mpw;
+=====================================================================
+Found a 8 line (28 tokens) duplication in the following files: 
+Starting at line 93 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+Starting at line 112 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+Starting at line 133 of D:\kimjunho\jsp3\web05\src\main\java\com\starsports\controller\AjaxController2.java
+
+		if(id.equals("admin")) {
+			msg = "no";
+		} else {
+			msg = "ok";
+		}
+		model.addAttribute("msg", msg);
+		return msg;
+	}

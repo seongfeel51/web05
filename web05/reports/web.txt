@@ -1,0 +1,37 @@
+<a href="seongfeel51.github.io/web01">현대카드</a> read.me에 이미지, 동영상, 텍스트 첨부
+<a href="seongfeel51.github.io/web04"></a>
+<a href="seongfeel51.github.io/web05">스타스포츠</a>
+<a href="seongfeel51.github.io/web06"></a>
+
+프로잭트5
+개발도구:spring tool suite, visual studio code
+개발언어:java 1.8 jsp web 4.0 
+개발환경:jsp + Tomcat9.0 + MySQL 8.0
+의존성 관리 도구:pom.xml
+빌드 도구:maven
+테스트 도구:JUnit4
+패키징 방식:jar, war
+사용 라이브러리:ojdbc6, mysql-connector-java-8.0.28, mariadb-java-client-3.0.4, mail, gson, logback
+RDBMS:MySQL
+
+프로잭트1
+개발도구:eclipse, visual studio code
+개발언어:java 1.8 jsp web 4.0 
+개발환경:jsp + Tomcat9.0 + mariadb 3.0.4
+의존성 관리 도구:
+빌드 도구:maven
+테스트 도구:JUnit4
+패키징 방식:jar, war
+사용 라이브러리:ojdbc6, mysql-connector-java-8.0.28, mariadb-java-client-3.0.4
+RDBMS:MariaDB
+
+프로잭트4
+개발도구:spring tool suite, visual studio code
+개발언어:java 1.8 jsp web 4.0 
+개발환경:jsp + Tomcat9.0 + mariadb 3.0.4
+의존성 관리 도구:pom.xml
+빌드 도구:maven
+테스트 도구:JUnit4
+패키징 방식:jar, war
+사용 라이브러리:ojdbc6, mysql-connector-java-8.0.28, mariadb-java-client-3.0.4, mail, gson, logback, fileupload
+RDBMS:Oracle

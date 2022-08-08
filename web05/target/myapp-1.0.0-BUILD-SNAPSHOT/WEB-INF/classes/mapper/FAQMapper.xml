@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="faq">
+	<select id="faqList" resultType="com.starsports.dto.FAQDTO">
+		select * from FAQ order by qno desc, regdate desc limit #{startPost}, #{bnum}
+	</select>
+	<select id="faqCount" resultType="integer">
+		select count(*) from FAQ
+	</select>
+</mapper>

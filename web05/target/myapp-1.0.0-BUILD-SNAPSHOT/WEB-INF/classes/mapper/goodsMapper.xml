@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="goods">
+	<select id="goodsList" resultType="com.starsports.dto.GoodsDTO">
+		select * from goods 
+	</select>
+	<select id="football" resultType="com.starsports.dto.GoodsDTO">
+		select * from goods where gcate = #{gcate }
+	</select>
+	<insert id="insertGoods">
+		insert into goods(gname, gimg, gsize, weight, texture) values
+		(#{gname}, #{gimg}, #{gsize}, #{weight}, #{texture})
+	</insert>
+</mapper>
